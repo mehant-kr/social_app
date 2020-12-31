@@ -20,11 +20,20 @@ User = get_user_model()
 
 
 class PostList(SelectRelatedMixin, generic.ListView):
+    template_name = "post/post_list.html"
     models = models.Post
     select_related = ('user', 'group')
     # select_related is a mixen, that allowes us to provide a tuple of related models
     # basicaly foregin key for this post for 'user' that it belongs to and 'group'
     # that it belongs to
+
+    # def get_queryset(self):
+    #     self.post_user = User.objects.all()
+    #     return self.post_user.posts.all()
+
+    def get_queryset(self):
+        """Return the last five published questions."""
+        return User.objects.all()
 
 
 class UserPosts(generic.ListView):
@@ -39,11 +48,11 @@ class UserPosts(generic.ListView):
             raise Http404
         else:
             return self.post_user.posts.all()
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['post_user'] = self.post_user
-        return context
+    #
+    # def get_context_data(self, **kwargs):
+    #     context = super().get_context_data(**kwargs)
+    #     context['post_user'] = self.post_user
+    #     return context
 
 
 class PostDetail(SelectRelatedMixin, generic.DetailView):

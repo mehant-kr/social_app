@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6c2dcd15-d790-4d4e-bb0f-4f6b044d3166" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/groups/templates/groups/group_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/groups/templates/groups/group_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/templates/post/post_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/post/templates/post/post_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/templates/post/user_post_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/post/templates/post/user_post_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/post/views.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="860e97b4-94f0-4b16-b15a-80bd8cb16629" />
+  <component name="ProjectId" id="1gy9HgfIMWxGRGNp6V6hthJ2FUB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="social_app" type="Python.DjangoServer" factoryName="Django server">
+      <module name="social_app" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="social_app.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6c2dcd15-d790-4d4e-bb0f-4f6b044d3166" name="Default Changelist" comment="" />
+      <created>1599075878195</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599075878195</updated>
+      <workItem from="1599075905265" duration="980000" />
+      <workItem from="1599126824966" duration="126000" />
+      <workItem from="1599137795125" duration="31000" />
+      <workItem from="1599145771521" duration="698000" />
+      <workItem from="1599178518836" duration="142000" />
+      <workItem from="1599203559655" duration="5936000" />
+      <workItem from="1599223756411" duration="3120000" />
+      <workItem from="1599273294414" duration="197000" />
+      <workItem from="1599273523015" duration="5945000" />
+      <workItem from="1599379437372" duration="6951000" />
+      <workItem from="1599560081876" duration="913000" />
+      <workItem from="1599711913393" duration="791000" />
+      <workItem from="1599817837117" duration="3000" />
+      <workItem from="1599817868278" duration="18000" />
+      <workItem from="1599817914390" duration="5569000" />
+      <workItem from="1599847057484" duration="98000" />
+      <workItem from="1599847176652" duration="18000" />
+      <workItem from="1599888988665" duration="1776000" />
+      <workItem from="1599929285654" duration="24000" />
+      <workItem from="1599929358018" duration="65000" />
+      <workItem from="1599929424754" duration="4105000" />
+      <workItem from="1599974381917" duration="8758000" />
+      <workItem from="1600024262582" duration="67000" />
+      <workItem from="1600339850884" duration="610000" />
+      <workItem from="1600528738020" duration="253000" />
+      <workItem from="1600531333563" duration="14000" />
+      <workItem from="1600531367309" duration="1198000" />
+      <workItem from="1600797675311" duration="14000" />
+      <workItem from="1600797715941" duration="138000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="114" y="0" width="1680" height="868" maximized="true" key="DiffContextDialog" timestamp="1599975049367">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state x="114" y="0" width="1680" height="868" maximized="true" key="DiffContextDialog/0.0.1920.1048@0.0.1920.1048" timestamp="1599831535655" />
+    <state x="731" y="426" key="FileChooserDialogImpl" timestamp="1600797825686">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="848" y="356" key="FileChooserDialogImpl/0.0.1920.1037@0.0.1920.1037" timestamp="1599929420907" />
+    <state x="731" y="426" key="FileChooserDialogImpl/0.0.1920.1044@0.0.1920.1044" timestamp="1600797825686" />
+    <state x="848" y="359" key="FileChooserDialogImpl/0.0.1920.1047@0.0.1920.1047" timestamp="1599277159910" />
+    <state width="1872" height="306" key="GridCell.Tab.0.bottom" timestamp="1600528990635">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state width="1920" height="312" key="GridCell.Tab.0.bottom/0.0.1920.1037@0.0.1920.1037" timestamp="1599933854065" />
+    <state width="1872" height="306" key="GridCell.Tab.0.bottom/0.0.1920.1047@0.0.1920.1047" timestamp="1600528990635" />
+    <state width="1920" height="170" key="GridCell.Tab.0.bottom/0.0.1920.1048@0.0.1920.1048" timestamp="1599832066841" />
+    <state width="1872" height="306" key="GridCell.Tab.0.center" timestamp="1600528990634">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state width="1920" height="312" key="GridCell.Tab.0.center/0.0.1920.1037@0.0.1920.1037" timestamp="1599933854065" />
+    <state width="1872" height="306" key="GridCell.Tab.0.center/0.0.1920.1047@0.0.1920.1047" timestamp="1600528990634" />
+    <state width="1920" height="170" key="GridCell.Tab.0.center/0.0.1920.1048@0.0.1920.1048" timestamp="1599832066841" />
+    <state width="1872" height="306" key="GridCell.Tab.0.left" timestamp="1600528990634">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state width="1920" height="312" key="GridCell.Tab.0.left/0.0.1920.1037@0.0.1920.1037" timestamp="1599933854064" />
+    <state width="1872" height="306" key="GridCell.Tab.0.left/0.0.1920.1047@0.0.1920.1047" timestamp="1600528990634" />
+    <state width="1920" height="170" key="GridCell.Tab.0.left/0.0.1920.1048@0.0.1920.1048" timestamp="1599832066840" />
+    <state width="1872" height="306" key="GridCell.Tab.0.right" timestamp="1600528990634">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state width="1920" height="312" key="GridCell.Tab.0.right/0.0.1920.1037@0.0.1920.1037" timestamp="1599933854065" />
+    <state width="1872" height="306" key="GridCell.Tab.0.right/0.0.1920.1047@0.0.1920.1047" timestamp="1600528990634" />
+    <state width="1920" height="170" key="GridCell.Tab.0.right/0.0.1920.1048@0.0.1920.1048" timestamp="1599832066841" />
+    <state x="574" y="157" width="1037" height="733" key="SettingsEditor" timestamp="1599277406289">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state x="574" y="157" width="1037" height="733" key="SettingsEditor/0.0.1920.1047@0.0.1920.1047" timestamp="1599277406289" />
+    <state x="623" y="206" width="672" height="678" key="search.everywhere.popup" timestamp="1599224490203">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state x="623" y="206" width="672" height="678" key="search.everywhere.popup/0.0.1920.1047@0.0.1920.1047" timestamp="1599224490203" />
+  </component>
+</project>
