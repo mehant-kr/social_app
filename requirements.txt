@@ -20,5 +20,5 @@ pytz==2020.1
 six==1.15.0
 soupsieve==2.0.1
 sqlparse==0.3.1
-traitlets==5.0.3
-wcwidth==0.2.5
+traitlets
+wcwidth
