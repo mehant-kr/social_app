@@ -6,9 +6,7 @@ decorator==4.4.2
 Django==3.1.1
 django-bootstrap4==2.2.0
 django-braces==1.14.0
-gunicorn==20.0.4
-ipython==7.18.1
-ipython-genutils==0.2.0
+gunicorn
 jedi==0.17.2
 misaka==2.1.1
 parso==0.7.1
