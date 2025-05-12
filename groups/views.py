@@ -9,11 +9,13 @@ from django.contrib import messages
 from django.db import IntegrityError
 
 from . import models
+from groups.forms import GroupForm
 
 
 class CreateGroup(LoginRequiredMixin, generic.CreateView):
-    fields = ('name', 'description')
+    # fields = ('name', 'description')
     model = Group
+    form_class = GroupForm
 
 
 class SingleGroup(generic.DetailView):

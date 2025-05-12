@@ -9,6 +9,7 @@ from django.http import Http404
 from django.views import generic
 
 from braces.views import SelectRelatedMixin
+from .forms import PostForm
 
 from . import models
 from . import forms
@@ -64,8 +65,9 @@ class PostDetail(SelectRelatedMixin, generic.DetailView):
         return queryset.filter(user__username__iexact=self.kwargs.get('username'))
 
 class CreatePost(LoginRequiredMixin, SelectRelatedMixin, generic.CreateView):
-    fields = ('message', 'group')
     model = models.Post
+    form_class = PostForm    # ← use your custom form here
+    # remove or comment out: fields = ('message','group')
 
     def form_valid(self, form):
         self.object = form.save(commit=False)

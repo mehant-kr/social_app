@@ -5,20 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c2dcd15-d790-4d4e-bb0f-4f6b044d3166" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/social_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/social_app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/groups/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/templates/accounts/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/templates/accounts/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/templates/accounts/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/templates/accounts/signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/groups/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/groups/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/groups/templates/groups/group_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/groups/templates/groups/group_base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/groups/templates/groups/groups_a_list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groups/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/groups/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/social_app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/social_app/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/groups/templates/groups/group_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/groups/templates/groups/group_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/groups/templates/groups/group_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/groups/templates/groups/group_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/groups/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/groups/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/post/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/templates/post/post_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/post/templates/post/post_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/post/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/social_app/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/social_app/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +26,13 @@
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -142,7 +148,7 @@
       <workItem from="1600531367309" duration="1198000" />
       <workItem from="1600797675311" duration="14000" />
       <workItem from="1600797715941" duration="138000" />
-      <workItem from="1747080218200" duration="3066000" />
+      <workItem from="1747080218200" duration="5656000" />
     </task>
     <servers />
   </component>

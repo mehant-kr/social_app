@@ -1,13 +1,14 @@
-{% extends "base.html" %}
-{% load bootstrap4 %}
 
+{% extends "base.html" %}
 {% block content %}
-<div class="container">
-    <h1>Sign Up</h1>
-    <form method="POST">
-        {% csrf_token %}
-        {% bootstrap_form form %}
-        <input type="submit" class="btn btn-default" value="Sign Up">
-    </form>
-</div>
+    <div class="max-w-md mx-auto bg-white rounded-lg shadow-md p-8">
+        <h1 class="text-3xl font-bold mb-6 text-center text-indigo-600">Sign Up</h1>
+        <form method="POST" class="space-y-4">
+            {% csrf_token %}
+            {{ form.as_p|safe }}
+            <button type="submit" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 transition duration-200">
+                Sign Up
+            </button>
+        </form>
+    </div>
 {% endblock %}
