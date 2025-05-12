@@ -1,0 +1,50 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE configs
+.idea
+.vscode
+
+# Virtual environment
+venv/
+myvenv/
+.venv/
+env/
+
+# Django specific
+*.log
+*.pot
+*.mo
+*.db
+*.sqlite3
+local_settings.py
+/static
+/media
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE and editor files
+*.swp
+*.swo
+.vscode/
+.idea/
+*.iml
+
+# Packages
+node_modules/
+
+# Coverage data
+.coverage
+htmlcov/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Docker
+docker-compose.yml

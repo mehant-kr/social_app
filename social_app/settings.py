@@ -26,7 +26,7 @@ SECRET_KEY = 'eb&^3u^b&6l49#u1m%@sv-h&1k=e23o6mp=#%ci!d*9-*3%m5l'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', 'simple-social-306415.herokuapp.com']
+ALLOWED_HOSTS = ['0.0.0.0', 'simple-social-306415.herokuapp.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -40,10 +40,15 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'bootstrap4',
+    'tailwind',
+    'theme',
+    # 'django_browser_reload',
     'accounts',
     'groups',
     'post'
 ]
+
+TAILWIND_APP_NAME = 'theme'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
