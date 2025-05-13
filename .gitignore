@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 
 # IDE configs
-.idea
+.idea/
 .vscode
 
 # Virtual environment
@@ -17,10 +17,7 @@ env/
 *.log
 *.pot
 *.mo
-*.db
-*.sqlite3
 local_settings.py
-/static
 /media
 
 # System files
