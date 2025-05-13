@@ -142,7 +142,7 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_DIRS = [
     BASE_DIR / 'static',                    # your project‑level static/
     BASE_DIR / 'social_app' / 'static',     # app‑level static/
-    # BASE_DIR / 'theme' / 'static_src'     # if you’re using django‑tailwind
+    BASE_DIR / 'theme' / 'static'     # if you’re using django‑tailwind
 ]
 
 LOGIN_REDIRECT_URL = 'test'
