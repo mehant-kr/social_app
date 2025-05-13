@@ -47,7 +47,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Django Server.social_app.executor": "Debug",
+    "Django Server.social_app.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -138,7 +138,7 @@
       <workItem from="1600797675311" duration="14000" />
       <workItem from="1600797715941" duration="138000" />
       <workItem from="1747080218200" duration="6545000" />
-      <workItem from="1747094518607" duration="7824000" />
+      <workItem from="1747094518607" duration="8160000" />
     </task>
     <servers />
   </component>
