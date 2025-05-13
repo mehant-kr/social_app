@@ -1,0 +1,7 @@
+{
+  "name": "social-app",
+  "scripts": {
+    "heroku-prebuild": "cd theme/static_src && npm ci --include=dev",
+    "heroku-postbuild": "cd theme/static_src && npm run build"
+  }
+}
