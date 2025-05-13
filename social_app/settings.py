@@ -59,10 +59,11 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'social_app.urls'
-
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -142,7 +143,7 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_DIRS = [
     BASE_DIR / 'static',                    # your project‑level static/
     BASE_DIR / 'social_app' / 'static',     # app‑level static/
-    BASE_DIR / 'theme' / 'static_src'     # if you’re using django‑tailwind
+    BASE_DIR / 'theme' / 'static'     # if you’re using django‑tailwind
 ]
 
 LOGIN_REDIRECT_URL = 'test'
