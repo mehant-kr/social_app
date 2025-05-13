@@ -27,7 +27,7 @@ SECRET_KEY = 'eb&^3u^b&6l49#u1m%@sv-h&1k=e23o6mp=#%ci!d*9-*3%m5l'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', 'star-social-app-fb4f13451b2c.herokuapp.com/', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['0.0.0.0', 'star-social-app-fb4f13451b2c.herokuapp.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
