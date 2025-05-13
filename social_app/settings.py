@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
+from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -129,9 +130,20 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_ROOT = '/home/mehant/Documents/django_project/social_app/static'
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
+
+# collectstatic will dump all files here (inside the slug, writeable)
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+# where Django looks for additional "static/" folders in your apps
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',                    # your project‑level static/
+    BASE_DIR / 'social_app' / 'static',     # app‑level static/
+    # BASE_DIR / 'theme' / 'static_src'     # if you’re using django‑tailwind
+]
 
 LOGIN_REDIRECT_URL = 'test'
 LOGOUT_REDIRECT_URL = 'thanks'
