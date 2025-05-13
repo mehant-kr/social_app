@@ -1,24 +1,29 @@
-<div class="post media">
-    <h3>{{ post.message_html|safe }}</h3>
-    <div class="media-body">
-{#        <strong>{{ post.user.username }}</strong>#}
-        <h5 class='media-heading'>
-            <span class="username">
-                <a href="{% url 'post:for_user' username=post.user.username %}">@{{ post.user.username }}</a>
-            </span>
-            <time class="time">
-                <a href="{% url 'post:single' username=post.user.username pk=post.pk %}">
-                    {{ post.created_at }}
+<div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-200">
+    <div class="mb-4">
+        <div class="flex items-center justify-between mb-4">
+            <a href="{% url 'post:for_user' username=post.user.username %}"
+               class="text-indigo-600 hover:text-indigo-800 font-medium">
+                @{{ post.user.username }}
+            </a>
+            <time class="text-sm text-gray-500">
+                <a href="{% url 'post:single' username=post.user.username pk=post.pk %}"
+                   class="hover:text-indigo-600">
+                    {{ post.created_at|date:"M d, Y" }}
                 </a>
             </time>
-        </h5>
-        <div class="media-footer">
-            {% if user.is_authenticated and post.user == user %}   
-                <a href="{% url 'post:delete' pk=post.pk %}" title="delete" class="btn btn-simple">
-                    <span class="glyphicon glyphicon-remove text-danger" aria-hidden='true'></span>
-                    <span class="text-danger icon-label">Delete</span>
-                </a>
-            {% endif %}
+        </div>
+        <div class="prose max-w-none">
+            {{ post.message_html|safe }}
         </div>
     </div>
+    {% if user.is_authenticated and post.user == user and hide_delete == False %}
+        <div class="flex justify-end">
+            <a href="{% url 'post:delete' pk=post.pk %}"
+               class="inline-block bg-red-500 text-white font-medium
+          py-2 px-4 rounded hover:bg-red-600
+          transition duration-150 ease-in-out">
+                Delete
+            </a>
+        </div>
+    {% endif %}
 </div>

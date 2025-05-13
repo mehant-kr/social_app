@@ -1,35 +1,40 @@
 {% extends "groups/group_base.html" %}
 {% block pregroup %}
-    <h1>{{ group.name }}</h1>
-{#    group - context dict auto passed by groups/models/Group class as lower case 'group'#}
-    <h2>Member Count: {{ group.members.count }}</h2>
-
-    <div class="content">
-        {% if user in group.members.all %}
-            <p>User is there</p>
-            <a href="{% url 'groups:leave' slug=group.slug %}"
-                class="btn btn-lg btn-fill btn-warning">
-                <span class="glyphicon glyphicon-remove-circle">Leave</span>
-            </a>
-        {% else %}
-            <p>No User</p>
-            <a href="{% url 'groups:join' slug=group.slug %}"
-               class="btn btn-lg btn-fill btn-warning">
-                <span class="glyphicon glyphicon-ok-circle">Join</span>
-            </a>
-        {% endif %}
+    <div class="max-w-4xl mx-auto p-6">
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h1 class="text-3xl font-bold text-indigo-600 mb-4">{{ group.name }}</h1>
+            <div class="flex items-center space-x-4 mb-6">
+                <div class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full">
+                    {{ group.members.count }} Member{{ group.members.count|pluralize }}
+                </div>
+                {% if user in group.members.all %}
+                    <a href="{% url 'groups:leave' slug=group.slug %}"
+                       class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-md transition duration-200">
+                        Leave Group
+                    </a>
+                {% else %}
+                    <a href="{% url 'groups:join' slug=group.slug %}"
+                       class="bg-green-500 hover:bg-green-600 text-black px-4 py-2 rounded-md transition duration-200">
+                        Join Group
+                    </a>
+                {% endif %}
+            </div>
+        </div>
     </div>
 {% endblock %}
 
 {% block group_content %}
-    <div class="col-md-8">
+    <div class="max-w-4xl mx-auto px-6">
         {% if group.posts.count == 0 %}
-            <h2>No posts in this group yet!</h2>
+            <div class="text-center py-12">
+                <h2 class="text-2xl text-gray-600">No posts in this group yet!</h2>
+            </div>
         {% else %}
-            {% for post in group.posts.all %}
-                {% include "post/_post.html" %}
-                {# injecting html file, just like extends #}
-            {% endfor %}
+            <div class="space-y-6">
+                {% for post in group.posts.all %}
+                    {% include "post/_post.html" %}
+                {% endfor %}
+            </div>
         {% endif %}
     </div>
 {% endblock %}

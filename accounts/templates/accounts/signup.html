@@ -5,7 +5,22 @@
         <h1 class="text-3xl font-bold mb-6 text-center text-indigo-600">Sign Up</h1>
         <form method="POST" class="space-y-4">
             {% csrf_token %}
-            {{ form.as_p|safe }}
+            {% for field in form %}
+                <div class="form-group">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="{{ field.id_for_label }}">
+                        {{ field.label }}
+                    </label>
+                    {{ field.errors }}
+                    <input type="{{ field.field.widget.input_type }}"
+                           name="{{ field.name }}"
+                           id="{{ field.id_for_label }}"
+                           class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-indigo-500"
+                           {% if field.field.required %}required{% endif %}>
+                    {% if field.help_text %}
+                        <p class="text-gray-600 text-xs italic">{{ field.help_text }}</p>
+                    {% endif %}
+                </div>
+            {% endfor %}
             <button type="submit" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 transition duration-200">
                 Sign Up
             </button>
